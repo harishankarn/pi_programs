@@ -1,4 +1,13 @@
-import RPi.GPIO as GPIO
+
+import platform
+
+if platform.system() == 'Darwin':
+    OS = "development"
+
+if OS == 'development':
+    import FakeRPi.GPIO as GPIO
+else:
+    import RPi.GPIO as GPIO
 import time
 
 sensor = 16
