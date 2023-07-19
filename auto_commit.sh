@@ -4,7 +4,6 @@
 # add, commit and push a file to git
 
 git add .
-echo "enter message : "
-read $message
+echo "enter message : " read $message
 git commit -m echo"$message"
 git push
