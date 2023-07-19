@@ -3,6 +3,8 @@ import platform
 
 if platform.system() == 'Darwin':
     OS = "development"
+else:
+    OS = ""
 
 if OS == 'development':
     import FakeRPi.GPIO as GPIO
