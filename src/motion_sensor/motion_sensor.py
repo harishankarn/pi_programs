@@ -21,7 +21,7 @@ GPIO.setup(buzzer,GPIO.OUT)
 
 GPIO.output(buzzer,False)
 print ("Initialzing PIR Sensor......")
-time.sleep(12)
+time.sleep(1)
 print ("PIR Ready...")
 print (" ")
 
@@ -31,7 +31,7 @@ try:
           GPIO.output(buzzer,True)
           print ("Motion Detected")
           while GPIO.input(sensor):
-          	time.sleep(0.2)
+          	time.sleep(2)
       else:
           GPIO.output(buzzer,False)
 
